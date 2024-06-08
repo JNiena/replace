@@ -8,4 +8,5 @@ replace = ""
 for file in os.listdir(path):
     if file.endswith(ends_with):
         new_file = file.replace(search, replace)
+        input(file + " |---> " + new_file)
         os.rename(os.path.join(path, file), os.path.join(path, new_file))
